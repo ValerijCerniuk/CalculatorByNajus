@@ -88,18 +88,16 @@ public class Calculator implements ActionListener {
         panel.add(equButton);
         panel.add(divButton);
 
-
         frame.add(panel);
         frame.add(negButton);
         frame.add(delButton);
         frame.add(clrButton);
         frame.add(textField);
         frame.setVisible(true);
-
     }
 
     public static void main(String[] args) {
-        Calculator calc = new Calculator();
+    Calculator calc = new Calculator();
     }
 
     @Override
@@ -160,6 +158,5 @@ public class Calculator implements ActionListener {
             temp *= -1;
             textField.setText(String.valueOf(temp));
         }
-
     }
 }
