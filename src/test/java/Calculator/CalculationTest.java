@@ -13,7 +13,7 @@ class CalculationTest {
         calculation.setNum1(10);
         calculation.setNum2(5);
 
-        calculation.sumAction();
+        calculation.sum();
         double result = calculation.getResult();
 
         assertEquals(15.0, result);
@@ -24,7 +24,7 @@ class CalculationTest {
         calculation.setNum1(10);
         calculation.setNum2(5);
 
-        calculation.subtractAction();
+        calculation.subtract();
         double result = calculation.getResult();
 
         assertEquals(5.0, result);
@@ -35,7 +35,7 @@ class CalculationTest {
         calculation.setNum1(10);
         calculation.setNum2(5);
 
-        calculation.multipleAction();
+        calculation.multiple();
         double result = calculation.getResult();
 
         assertEquals(50, result);
@@ -46,7 +46,7 @@ class CalculationTest {
         calculation.setNum1(10);
         calculation.setNum2(5);
 
-        calculation.divideAction();
+        calculation.divide();
         double result = calculation.getResult();
 
         assertEquals(2.0, result);
@@ -56,7 +56,7 @@ class CalculationTest {
     void clearAction() {
 
 
-        calculation.clearAction();
+        calculation.clear();
         double result = calculation.getResult();
 
         assertEquals(0.0, result);
@@ -67,7 +67,7 @@ class CalculationTest {
 
         calculation.setResult(5);
 
-        calculation.negativeAction();
+        calculation.negative();
         double result = calculation.getResult();
 
         assertEquals(-5.0, result);

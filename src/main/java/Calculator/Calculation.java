@@ -8,30 +8,34 @@ public class Calculation {
     public Calculation() {
     }
 
-    public void sumAction(){
+    public void sum(){
         setResult(getNum1() + getNum2());
     }
 
-    public void subtractAction(){
+    public void subtract(){
         setResult(getNum1() - getNum2());
     }
 
-    public void multipleAction(){
+    public void multiple(){
         setResult(getNum1() * getNum2());
     }
 
-    public void divideAction(){
+    public void divide(){
         if (getNum2() != 0){
             setResult(getNum1() / getNum2());
         }
     }
 
-    public void clearAction(){
+    public void clear(){
         setResult(0);
     }
 
-    public void negativeAction(){
-        setResult(getResult() * -1);
+    public void negative(){
+        if(getResult() != 0) {
+            setResult(getResult() * -1);
+        }else {
+            setResult(0);
+        }
     }
 
     public double getNum1() {

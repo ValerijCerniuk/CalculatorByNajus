@@ -3,12 +3,12 @@ package Calculator;
 public class CalcArea extends Calculation{
 
     public void areaOfTriangle(){
-        multipleAction();
+        multiple();
         setResult(getResult() / 2);
     }
 
     public void areaOfRectangle(){
-        multipleAction();
+        multiple();
     }
 
     public void areaOfCircle(){
