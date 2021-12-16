@@ -1,3 +1,5 @@
+package CalculatorWithGUI;
+
 import javax.swing.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
@@ -21,7 +23,7 @@ public class Calculator implements ActionListener {
     char operator;
 
     Calculator() {
-        frame = new JFrame("Calculator");
+        frame = new JFrame("CalculatorWithGUI.Calculator");
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         frame.setSize(420, 550);
         frame.setLayout(null);
@@ -147,7 +149,6 @@ public class Calculator implements ActionListener {
         }
         if (e.getSource() == delButton) {
             String str = textField.getText();
-            textField.setText("");
             textField.setText("");
             for (int i = 0; i < str.length() - 1; i++) {
                 textField.setText(textField.getText() + str.charAt(i));
